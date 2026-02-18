@@ -4,55 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Forest Unfolding</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #2d5a3d;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a472a;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: gold;
+            text-decoration: none;
+        }
+        .tree-img {
+            width: 100%;
+            height: auto;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #1a472a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <h1>A Forest Unfolding</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#album">Album</a></li>
-                <li><a href="#listen">Listen</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>A Forest Unfolding</h1>
     </header>
-
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h2>A Forest Unfolding</h2>
-                <p>Music Project</p>
-            </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#collaborators">Collaborators</a>
+        <a href="#libretto">Libretto</a>
+        <a href="#program-notes">Program Notes</a>
+        <a href="#performances">Performances</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Home/Landing Page</h2>
+            <img src="path/to/album-artwork.jpg" alt="Album Artwork" class="tree-img">
+            <p>Welcome to A Forest Unfolding, a captivating journey through sound and story.</p>
         </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Add your story and information about the music project here.</p>
+        <section id="collaborators" class="section">
+            <h2>Collaborators</h2>
+            <h3>Commissioners/Directors</h3>
+            <ul>
+                <li><a href="link-to-bio">Director 1</a></li>
+                <li><a href="link-to-bio">Director 2</a></li>
+            </ul>
+            <h3>Writers</h3>
+            <ul>
+                <li><a href="link-to-bio">Writer 1</a></li>
+                <li><a href="link-to-bio">Writer 2</a></li>
+            </ul>
+            <h3>Composers</h3>
+            <ul>
+                <li><a href="link-to-bio">Composer 1</a></li>
+                <li><a href="link-to-bio">Composer 2</a></li>
+            </ul>
+            <h3>Source Authors</h3>
+            <ul>
+                <li><a href="link-to-bio">Author 1</a></li>
+                <li><a href="link-to-bio">Author 2</a></li>
+            </ul>
         </section>
-
-        <section id="album">
-            <h2>Album</h2>
-            <div class="album-grid">
-                <div class="album-card">
-                    <h3>Album Title</h3>
-                    <p>Release Date: 2026</p>
-                </div>
-            </div>
+        <section id="libretto" class="section">
+            <h2>Libretto/Tracklist</h2>
+            <p>[Insert Libretto/Tracklist Here]</p>
         </section>
-
-        <section id="listen">
-            <h2>Listen</h2>
-            <p>Streaming links and audio players will go here.</p>
+        <section id="program-notes" class="section">
+            <h2>Program Notes</h2>
+            <p>[Insert Program Notes Here]</p>
         </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch through social media or email.</p>
+        <section id="performances" class="section">
+            <h2>Past Performances</h2>
+            <ul>
+                <li>Date 1 – Performer 1 – <a href="link-to-review">Review 1</a></li>
+                <li>Date 2 – Performer 2 – <a href="link-to-review">Review 2</a></li>
+                <!-- Add more performances here -->
+            </ul>
         </section>
-    </main>
-
+    </div>
     <footer>
         <p>&copy; 2026 A Forest Unfolding. All rights reserved.</p>
     </footer>
