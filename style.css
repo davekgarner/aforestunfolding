@@ -1,101 +1,58 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+.container {
+    background-color: white;
     color: #333;
-    background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
-    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: #0c4b33; /* Deep forest green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
 }
 
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: #90ee90;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 section {
-    margin: 3rem 0;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    padding: 20px;
     border-radius: 8px;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#hero {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, rgba(144, 238, 144, 0.1) 0%, rgba(45, 90, 61, 0.3) 100%);
-}
-
-#hero h2 {
-    font-size: 3rem;
-}
-
-.album-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.album-card {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid rgba(144, 238, 144, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #f9d56e; /* Light gold */
+    color: #333;
     text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
+    padding: 10px;
 }
 
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
+.tree-image {
+    width: 100%;
+    height: auto;
+    background-image: url('tree-image-url'); /* Place your tree image URL here */
+    background-size: cover;
+    background-position: center;
+}
 
-    #hero h2 {
-        font-size: 2rem;
-    }
+.nav {
+    background-color: #006d77; /* Sea blue */
+    padding: 10px;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
 }
